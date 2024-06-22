@@ -1,0 +1,66 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:cobblestone"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "minecraft:netherrack"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "createmorerecipes:unprocessed_netherrack"
+        },
+        {
+          "amount": 40500,
+          "fluid": "minecraft:lava",
+          "nbt": {}
+        }
+      ],
+      "results": [
+        {
+          "item": "createmorerecipes:unprocessed_netherrack"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createmorerecipes:unprocessed_netherrack"
+        }
+      ],
+      "results": [
+        {
+          "item": "createmorerecipes:unprocessed_netherrack"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "createmorerecipes:unprocessed_netherrack"
+        },
+        {
+          "amount": 40500,
+          "fluid": "minecraft:water",
+          "nbt": {}
+        }
+      ],
+      "results": [
+        {
+          "item": "minecraft:netherrack"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "createmorerecipes:unprocessed_netherrack"
+  }
+}
